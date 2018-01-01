@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Content/css/bundle.css">
+</head>
+<body ng-app = "app">
+<div ng-controller = "formController">
+    <dl ng-repeat = "data in datas">
+        <dt>{{data.name}}</dt>
+        <dd><img src="Content/{{data.images}}" alt=""></dd>
+    </dl>
+</div>
+<script src="Script/angular/angular.js"></script>
+<script src="App/app.js"></script>
+<script src="App/Controller/formController.js"></script>
+</body>
+</html>
